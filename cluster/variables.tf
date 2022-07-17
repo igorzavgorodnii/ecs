@@ -43,6 +43,11 @@ variable "amis" {
     }
 }
 
+variable "ssh_pubkey_file" {
+    description = "Path to an SSH public key"
+    default = "~/.ssh/id_rsa.pub"
+}
+
 # variable "subnets" {
 #   type    = "list"
 #   default = ["subnet-ada14af6", "subnet-36e64951", "subnet-bd6fdaf4"]
