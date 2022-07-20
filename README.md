@@ -1,8 +1,9 @@
 # ecs
 
+1. Provide your Access Key ID and Secret Access Key to test account or sandbox
+2. Genarate your keypay and put it into ~/.ssh
+3. run terraform apply from "cluster" directory
+4. wait ~ 5 mins
+5. grab balancer dns from terraform, paste it into browser 
 
 
-
-Connect to the EC2 instances using your own id_rsa: 
-1. Generate ssh key
-2. ssh -i "~/.ssh/id_rsa" ec2-user@<Public IPv4 DNS or Public IPv4 address>

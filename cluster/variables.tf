@@ -69,25 +69,6 @@ variable "environment" {
   default     = "test"
 }
 
-variable "cidrs" {
-  type        = list(any)
-  description = "List of cidrs"
-  default = [
-    "10.0.2.0/24",
-    "10.0.3.0/24"
-  ]
-}
-
-variable "availability_zones" {
-  type        = list(any)
-  description = "List of availability zones"
-  default = [
-    "us-east-1a",
-    "us-east-1b"
-  ]
-}
-
-
 ###############
 
 variable "sg_name" {
@@ -107,15 +88,15 @@ variable "sg_tagname" {
 
 variable "sg_ws_name" {
   type    = string
-  default = "webserver_sg"
+  default = "ecs_sg"
 }
 
 variable "sg_ws_description" {
   type    = string
-  default = "SG for web server"
+  default = "SG for ECS"
 }
 
 variable "sg_ws_tagname" {
   type    = string
-  default = "SG for web"
+  default = "SG for ECS"
 }

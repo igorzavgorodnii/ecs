@@ -301,7 +301,7 @@ resource "aws_lb_target_group" "TG-tf" {
 
 # Create ALB
 resource "aws_lb" "ALB-tf" {
-  name               = "ALG-tf"
+  name               = "ALB-tf"
   internal           = false
   load_balancer_type = "application"
   security_groups    = [aws_security_group.elb_sg.id]
